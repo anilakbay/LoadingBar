@@ -1,0 +1,44 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-size: 40px;
+  background-color: black;
+  color: white;
+}
+
+.container {
+  width: 400px;
+  text-align: center;
+  position: relative;
+}
+
+.container h1 {
+  font-size: 32px; /* Başlık boyutu */
+  margin-bottom: 20px; /* Başlık ile diğer içerikler arasındaki boşluk */
+}
+
+.counter {
+  font-size: 36px; /* Yüzde metni boyutu */
+  margin-bottom: 20px; /* Yüzde metni ile yükleme çubuğu arasındaki boşluk */
+}
+
+.loadingBar {
+  width: 100%;
+  height: 10px;
+  background-color: white;
+  border-radius: 5px;
+  position: relative; /* İçindeki kırmızı çubuğun düzgün hizalanması için */
+}
+
+.loadingBarFront {
+  width: 0%;
+  height: 100%; /* Yükleme çubuğunun tamamını kaplaması için */
+  background-color: red;
+  border-radius: 5px;
+  position: absolute; /* İçinde kırmızı çubuğun hizalanması */
+  top: 0;
+  left: 0;
+}
